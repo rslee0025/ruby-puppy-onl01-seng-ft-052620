@@ -1,32 +1,34 @@
-class Dog
+class Dog 
+  
   @@all = []
-
+  
   def initialize(name)
     @name = name
-    self.save
-  end
-
-  def self.all
-    @@all
-  end
-
+    @@all << self
+    
+  end 
+  
+  def self.all 
+    @@all 
+  end 
+  
   def self.clear_all
-    @@all = [] 
-  end
-
+    @@all.clear 
+  end 
+  
   def self.print_all
     @@all.each do |dog|
       puts dog.name
     end
-end
-
+  end
+  
+  
   def save
     @@all << self
-  end
-
+  end 
+  
   def name
-    @name
+    @name 
   end
 
-
-
+end   
