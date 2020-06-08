@@ -19,6 +19,5 @@ class Dog
     @@all. each do |name|
     end
   end 
-  return @all
-  
+
 end   
